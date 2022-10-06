@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Animate.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Animate.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANIMATE_DIALOG DIALOGEX 0, 0, 285, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "动画显示"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "...",IDC_FILE_BUTTON,130,23,39,14
+    PUSHBUTTON      "退出",IDCANCEL,169,55,50,14
+    LTEXT           "数据文件:",IDC_STATIC,8,9,41,10
+    EDITTEXT        IDC_FILE_EDIT,15,23,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "画图",IDC_DRAW_BUTTON,61,55,50,14
+    CONTROL         "Slider1",IDC_TIME_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,205,5,79,15
+    CONTROL         "Slider1",IDC_SKIP_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,205,23,79,15
+    LTEXT           "速度:",IDC_STATIC,185,10,21,8
+    LTEXT           "当前位置:",IDC_STATIC,172,26,36,8
+    CONTROL         "循环放映",IDC_CYCLE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,61,53,8
+    PUSHBUTTON      "暂停",IDC_PAUSE_BUTTON,115,55,50,14,WS_DISABLED
+    PUSHBUTTON      "切割",IDC_CUT_BUTTON,7,55,50,14
+    CONTROL         "倒计时",IDC_REVCOU_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,50,53,8
+    CONTROL         "记录Ca",IDC_CHECK_SAVECA,"Button",BS_AUTOCHECKBOX,228,38,39,10
+END
+
+IDHELP DIALOGEX 0, 0, 319, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,198,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,262,60,50,14
+    EDITTEXT        IDC_STEP_EDIT,49,30,105,14,ES_AUTOHSCROLL
+    LTEXT           "输入切割步数：",IDC_STATIC,29,16,57,8
+END
+
+IDD_INPUT_DIALOG DIALOGEX 0, 0, 297, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,184,43,50,14
+    PUSHBUTTON      "取消",IDCANCEL,240,43,50,14
+    LTEXT           "切割步数：",IDC_STATIC,46,7,41,8
+    EDITTEXT        IDC_STEP_EDIT,61,23,130,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "Animate Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Animate"
+            VALUE "LegalCopyright", "版权所有 (C) 2001"
+            VALUE "OriginalFilename", "Animate.EXE"
+            VALUE "ProductName", "Animate 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ANIMATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 284
+        BOTTOMMARGIN, 72
+    END
+
+    IDHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_INPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_OUTPUT MENU
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "暂停",                          AFX_ID_PAUSE
+        MENUITEM "输出",                          AFX_ID_OUTPUT
+        MENUITEM "保存NO",                        ID_SAVENO
+        MENUITEM "找松驰",                         AFX_ID_SSRELAX
+        MENUITEM "半径序列",                        ID_Menu
+        MENUITEM "速度序列",                        0
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_INDICATOR_INFO      "CaUp:0.0000001,CaDown:0.000000001,NO:0.0000001,Triger:10000000000000000000000000000000000000000000000000000000000000"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Animate.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
